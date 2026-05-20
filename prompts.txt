@@ -286,3 +286,16 @@ USO EN EL PROYECTO: Usé la respuesta directamente para modificar `ingreso.html`
 ------------------------------------------------------
 REFLEXION PERSONAL: El prompt fue útil y permitió obtener una implementación completa de los requisitos, los siguientes prompts seran para corregir algunos errores que quedaron en las fases 1 y 2
 ============================================================
+
+============================================================ CONSULTA #5
+Etapa del proyecto: Etapa 1
+Fecha: 20/05/2026
+
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: cambia los colores para que los bordes blancos de las imagenes de los logos no se note y cambia la imagen de lenovo: https://it.vecteezy.com/arte-vettoriale/20927745-lenovo-logo-marca-telefono-simbolo-nome-rosso-design-cina-mobile-vettore-illustrazione
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Copilot actualizó los estilos del contenedor de logos para un fondo neutro y cambió la URL del logo de Lenovo a la solicitada. El resultado reduce la visibilidad de los bordes blancos en los logos y mantiene la sección de marcas consistente.
+----------------------------------------------------------
+USO EN EL PROYECTO: Modificaciones en apartados de la etapa 1 que tenian errores
+REFLEXION PERSONAL: esta fue una correccion necesaria que deje para el final con el fin de ahorrar tiempo y aprovecharlo en la construcion de la pagina web
+============================================================

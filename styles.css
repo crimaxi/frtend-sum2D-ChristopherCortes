@@ -4,6 +4,7 @@
     --color-secondary: #6b7280;     /* Gris moderno */
     --color-accent: #00bcd4;        /* Cyan/Turquesa */
     --color-light: #f3f4f6;         /* Blanco muy claro */
+    --color-surface: #eef4f8;       /* Fondo neutro para logos */
     --color-dark: #0d1117;          /* Muy oscuro */
     --color-white: #ffffff;
     --color-success: #22c55e;
@@ -321,15 +322,15 @@ a {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color: var(--color-light);
+    background-color: var(--color-surface);
     border-radius: 10px;
     transition: var(--transition);
-    border: 2px solid transparent;
+    border: 2px solid var(--color-surface);
 }
 
 .marca-item:hover {
     border-color: var(--color-accent);
-    background-color: rgba(14, 165, 233, 0.05);
+    background-color: rgba(14, 165, 233, 0.08);
 }
 
 .marca-item img {
@@ -337,6 +338,9 @@ a {
     max-height: 60px;
     object-fit: contain;
     margin-bottom: 1rem;
+    background-color: var(--color-surface);
+    padding: 0.35rem;
+    border-radius: 8px;
 }
 
 .marca-item i {
