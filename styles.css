@@ -1,12 +1,12 @@
 /* Variables CSS */
 :root {
-    --color-primary: #1e3a8a;       /* Azul oscuro */
-    --color-secondary: #64748b;     /* Gris */
-    --color-accent: #0ea5e9;        /* Azul claro */
-    --color-light: #f8fafc;         /* Blanco/muy claro */
-    --color-dark: #0f172a;          /* Muy oscuro */
+    --color-primary: #002d5f;       /* Azul oscuro tech */
+    --color-secondary: #6b7280;     /* Gris moderno */
+    --color-accent: #00bcd4;        /* Cyan/Turquesa */
+    --color-light: #f3f4f6;         /* Blanco muy claro */
+    --color-dark: #0d1117;          /* Muy oscuro */
     --color-white: #ffffff;
-    --color-success: #10b981;
+    --color-success: #22c55e;
     
     --font-title: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;

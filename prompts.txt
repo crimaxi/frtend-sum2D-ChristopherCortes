@@ -74,12 +74,13 @@ Utilicé la respuesta tal cual fue generada. No requirió modificaciones signifi
 - Los iconos de Font Awesome se cargaron correctamente desde CDN
 - La navegación es funcional y scroll-suave está implementado
 
-La decisión de usar la respuesta sin cambios se basó en que cumplía al 100% con los requisitos especificados en el prompt.
-
 ------
 REFLEXION PERSONAL:
 el prompt entrgado me entrego lo que necesitaba, ya que use el enunciado con los requerimientos entregados en la prueba, no obstante requiere correcciones debido a errores comunes en el uso de ia
 en la proxima seccion revisare de forma mas exhaustiva los requisitos del proyecto
+el unico cambio significativo que realice fue el cambio en la paleta de colores, ya que el resultado original, no termino de convencerme
+
+------
 ============================================================
 
 
