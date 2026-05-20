@@ -1,1 +1,85 @@
+============================================================ CONSULTA #1
+Etapa del proyecto: Etapa 1
+Fecha: 20/05/2026
+
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+"1.2 Estructura de Archivos
+frtend-sum2D-nombre-apellido/ |-- index.html |-- style.css |-- prompts.txt |-
+- assets/ |-- images/
+1.3 Contenido Requerido
+Barra de Navegacion
+- Nombre o logo del servicio tecnico a la izquierda.
+- Links de navegacion: Inicio, Servicios, Precios, Nosotros y Ingresar equipo.
+- El link "Ingresar equipo" debe apuntar a ingreso.html (pagina que se creara en la Etapa 2).
+Seccion Hero
+- Imagen de fondo relacionada con tecnologia o reparacion de computadores.
+- Titulo principal con el nombre del servicio tecnico (etiqueta h1).
+- Slogan que transmita confianza y rapidez.
+- Boton principal "Ingresar mi equipo" que redirija a ingreso.html.
+- Indicadores visuales de confianza (ejemplos: "Diagnostico gratuito", "Garantia escrita", "Mas
+de 8 anos de experiencia"). Pueden ser tres iconos con texto corto debajo del hero.
+Seccion de Servicios (minimo 6 servicios)
+Mostrar los servicios que ofrece TechFix en formato de tarjetas. Ejemplos sugeridos:
+- Reparacion de notebooks y computadores de escritorio
+- Cambio de pantalla y teclado
+- Limpieza y mantenimiento preventivo
+- Instalacion y reinstalacion de sistema operativo
+- Recuperacion de datos
+- Soporte remoto
+- Venta de repuestos y accesorios
+Cada tarjeta debe incluir un icono o imagen, el nombre del servicio, una descripcion breve y un
+tiempo de resolucion estimado (ejemplo: "Tiempo estimado: 24-48 hs"). Las tarjetas deben
+organizarse en una grilla de al menos tres columnas en pantallas de escritorio.
+Seccion Marcas y Dispositivos Atendidos
+Mostrar las marcas o tipos de dispositivos que el servicio tecnico atiende. Minimo 6. Pueden
+mostrarse como logos con nombre o como una lista estilizada con iconos. Ejemplos: HP, Dell,
+Lenovo, Apple, Samsung, Asus, Acer, Impresoras Canon y Epson.
+Seccion Tabla de Precios Referenciales
+Mostrar una tabla HTML con precios referenciales de los servicios mas comunes. La tabla debe
+incluir al menos 6 filas con las columnas: Servicio, Precio desde y Tiempo estimado. La tabla debe
+estar estilizada con CSS (cabecera con color de fondo, filas alternadas, bordes).
+Seccion Testimonios (minimo 3)
+- Nombre del cliente, tipo de servicio recibido, texto del comentario y calificacion.
+Evaluacion Sumativa 2 | Desarrollo Web HTML & JS Servicio Tecnico TechFix
+Programacion Web | Pagina 5
+Footer
+- Nombre y logo del servicio tecnico.
+- Horarios de atencion presencial y remota.
+- Direccion, email, telefono y WhatsApp ficticios.
+- Links a redes sociales (pueden ser placeholders).
+- Ano de copyright.
+1.4 Requisitos de Estilo
+- Paleta de colores que transmita tecnologia y confianza (azul oscuro, gris, blanco, algun
+color de acento). Definir al menos tres colores como variables CSS.
+- Minimo dos tipografias: una moderna para titulos y otra legible para cuerpo. Pueden usarse
+tipografias de Google Fonts.
+- Las tarjetas de servicios deben tener efecto hover con transicion suave.
+- La tabla de precios debe tener estilos CSS propios: cabecera con color, filas alternadas con
+fondo diferente y bordes definidos.
+- El sitio debe adaptarse a pantallas moviles: los elementos se apilan en una sola columna y
+la tabla es horizontalmente desplazable si no entra en pantalla."
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve):
+Copilot creó completamente la página HTML de TechFix con estructura semántica, incluyendo todas las 8 secciones requeridas (navbar, hero, servicios con 6 tarjetas, marcas, tabla de precios, nosotros, testimonios y footer). Generó también todo el CSS responsivo con variables de color, tipografías de Google Fonts, efectos hover, animaciones suaves y breakpoints para móvil, tablet y desktop.
+
+----------------------------------------------------------
+USO EN EL PROYECTO:
+Utilicé la respuesta tal cual fue generada. No requirió modificaciones significativas debido a que Copilot interpretó correctamente todos los requisitos:
+- El HTML está bien estructurado semánticamente
+- El CSS implementa exactamente lo solicitado (3 variables de color, 2 tipografías, efectos hover, tabla estilizada)
+- La estructura es completamente responsive (3 breakpoints principales)
+- Todos los elementos requeridos están presentes y correctamente organizados
+- Los iconos de Font Awesome se cargaron correctamente desde CDN
+- La navegación es funcional y scroll-suave está implementado
+
+La decisión de usar la respuesta sin cambios se basó en que cumplía al 100% con los requisitos especificados en el prompt.
+
+------
+REFLEXION PERSONAL:
+el prompt entrgado me entrego lo que necesitaba, ya que use el enunciado con los requerimientos entregados en la prueba, no obstante requiere correcciones debido a errores comunes en el uso de ia
+en la proxima seccion revisare de forma mas exhaustiva los requisitos del proyecto
+============================================================
+
 

@@ -1,11 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechFix - Servicio Técnico Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <i class="fas fa-laptop"></i>
+                <span>TechFix</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="ingreso.html" class="btn-nav">Ingresar equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>TechFix - Tu Servicio Técnico de Confianza</h1>
+            <p class="slogan">Reparamos tu tecnología con rapidez, profesionalismo y garantía</p>
+            <a href="ingreso.html" class="btn-primary">Ingresar mi equipo</a>
+        </div>
+        <div class="trust-indicators">
+            <div class="trust-item">
+                <i class="fas fa-check-circle"></i>
+                <p>Diagnóstico Gratuito</p>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <p>Garantía Escrita</p>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-award"></i>
+                <p>+8 años de experiencia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <p class="section-subtitle">Ofrecemos soluciones integrales para todos tus dispositivos</p>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Reparación de Notebooks y Desktops</h3>
+                    <p>Reparación profesional de computadores portátiles y de escritorio con piezas de calidad.</p>
+                    <span class="tiempo-estimado">⏱️ 24-48 hs</span>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-monitor"></i>
+                    <h3>Cambio de Pantalla y Teclado</h3>
+                    <p>Reemplazo rápido de pantallas LCD y teclados con componentes certificados.</p>
+                    <span class="tiempo-estimado">⏱️ 2-4 hs</span>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Limpieza y Mantenimiento</h3>
+                    <p>Limpieza profunda interna y externa para mejorar el rendimiento de tu equipo.</p>
+                    <span class="tiempo-estimado">⏱️ 1-2 hs</span>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-compact-disc"></i>
+                    <h3>Instalación de Sistema Operativo</h3>
+                    <p>Instalación y reinstalación de Windows, Linux y macOS con licencias válidas.</p>
+                    <span class="tiempo-estimado">⏱️ 1-3 hs</span>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Recuperación de Datos</h3>
+                    <p>Recuperación segura de archivos perdidos, formateados o de discos dañados.</p>
+                    <span class="tiempo-estimado">⏱️ 3-7 días</span>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Soporte Remoto</h3>
+                    <p>Asistencia técnica en línea para resolver problemas de software y configuración.</p>
+                    <span class="tiempo-estimado">⏱️ 30-60 min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Marcas y Dispositivos -->
+    <section class="marcas" id="marcas">
+        <div class="container">
+            <h2>Marcas y Dispositivos Atendidos</h2>
+            <p class="section-subtitle">Trabajamos con las mejores marcas del mercado</p>
+            <div class="marcas-grid">
+                <div class="marca-item">
+                    <i class="fab fa-windows"></i>
+                    <p>HP</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fas fa-laptop"></i>
+                    <p>Dell</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fas fa-laptop"></i>
+                    <p>Lenovo</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fab fa-apple"></i>
+                    <p>Apple</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Samsung</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fas fa-laptop"></i>
+                    <p>Asus</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fas fa-laptop"></i>
+                    <p>Acer</p>
+                </div>
+                <div class="marca-item">
+                    <i class="fas fa-print"></i>
+                    <p>Canon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Precios -->
+    <section class="precios" id="precios">
+        <div class="container">
+            <h2>Tabla de Precios Referenciales</h2>
+            <p class="section-subtitle">Precios aproximados según complejidad del servicio</p>
+            <div class="tabla-wrapper">
+                <table class="tabla-precios">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Precio Desde</th>
+                            <th>Tiempo Estimado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diagnóstico Técnico</td>
+                            <td>$0 (Gratuito)</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Instalación Sistema Operativo</td>
+                            <td>$50-80</td>
+                            <td>1-3 hs</td>
+                        </tr>
+                        <tr>
+                            <td>Cambio de Pantalla Laptop</td>
+                            <td>$100-200</td>
+                            <td>2-4 hs</td>
+                        </tr>
+                        <tr>
+                            <td>Reparación Placa Base</td>
+                            <td>$150-300</td>
+                            <td>24-48 hs</td>
+                        </tr>
+                        <tr>
+                            <td>Recuperación de Datos</td>
+                            <td>$200-500</td>
+                            <td>3-7 días</td>
+                        </tr>
+                        <tr>
+                            <td>Mantenimiento Preventivo</td>
+                            <td>$40-70</td>
+                            <td>1-2 hs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p class="section-subtitle">Más de 8 años sirviendo a nuestra comunidad</p>
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <p>TechFix es una empresa dedicada a brindar soluciones técnicas integrales desde hace más de 8 años. Nuestro equipo de profesionales certificados está comprometido con la excelencia y la satisfacción del cliente.</p>
+                    <ul class="valores">
+                        <li><i class="fas fa-check"></i> Diagnóstico preciso y gratuito</li>
+                        <li><i class="fas fa-check"></i> Componentes certificados y originales</li>
+                        <li><i class="fas fa-check"></i> Garantía escrita en todos los servicios</li>
+                        <li><i class="fas fa-check"></i> Atención rápida y profesional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <h2>Testimonios de Clientes</h2>
+            <p class="section-subtitle">Mira lo que dicen nuestros clientes satisfechos</p>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-texto">"Excelente servicio, mi notebook tenía problemas graves y en 48 horas estaba como nueva. El diagnóstico fue preciso y el costo justo."</p>
+                    <h4>Juan Pérez</h4>
+                    <p class="servicio-recibido">Reparación de Notebook</p>
+                </div>
+                <div class="testimonio-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-texto">"Recomiendo 100% TechFix. Recuperaron todos mis documentos importantes que creía perdidos. Profesionalismo de primera."</p>
+                    <h4>María González</h4>
+                    <p class="servicio-recibido">Recuperación de Datos</p>
+                </div>
+                <div class="testimonio-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-texto">"Servicio rápido y eficiente. Mi desktop fue atendido en el mismo día con un precio muy competitivo. Muy recomendados."</p>
+                    <h4>Carlos López</h4>
+                    <p class="servicio-recibido">Instalación Sistema Operativo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-laptop"></i> TechFix</h4>
+                    <p>Servicio técnico profesional desde 2015</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Presencial: Lunes a Viernes 9:00 - 18:00</p>
+                    <p>Sábados: 10:00 - 14:00</p>
+                    <p>Remoto: 24/7</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📍 Calle Principal 1234, Ciudad</p>
+                    <p>📧 info@techfix.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>💬 WhatsApp: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechFix. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
