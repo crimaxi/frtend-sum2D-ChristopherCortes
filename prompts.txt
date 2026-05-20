@@ -4,7 +4,7 @@ Fecha: 20/05/2026
 
 ------------------------------------------------------------
 PROMPT ENVIADO A COPILOT:
-"1.2 Estructura de Archivos
+1.2 Estructura de Archivos
 frtend-sum2D-nombre-apellido/ |-- index.html |-- style.css |-- prompts.txt |-
 - assets/ |-- images/
 1.3 Contenido Requerido
@@ -176,4 +176,47 @@ Obtuve un resultado cercano al esperado, con la mayor parte del formulario ya im
 ------
 ============================================================
 
+============================================================ CONSULTA #3
+Etapa del proyecto: Etapa 3
+Fecha: 20/05/2026
 
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+
+ frtend-sum2D-nombre-apellido/ |-- index.html |-- ingreso.html |-- style.css
+|-- ingreso.css |-- validaciones.js |-- prompts.txt |-- assets/ |--images/
+Etapa 3:
+
+3.3 Reglas de Validacion Requeridas
+Seccion A — Datos del Cliente
+Campo Regla
+Nombre completo Solo letras y espacios. Minimo 5 caracteres, maximo 80.
+DNI Solo numeros. Entre 7 y 8 digitos.
+Correo electronico Formato valido con @ y dominio. Usar expresion regular.
+Confirmar correo Debe coincidir exactamente con el correo electronico.
+Telefono Solo digitos, guiones, espacios y signo mas (+). Minimo 8 digitos
+numericos.
+Tipo de cliente Debe seleccionarse una opcion. Si es "Empresa", el nombre de
+empresa y el CUIT no pueden estar vacios. El CUIT debe tener el
+formato ##-########-# (con guiones) o 11 digitos numericos
+seguidos.
+Provincia y Localidad Provincia: seleccion obligatoria. Localidad: no puede estar vacia,
+minimo 2 caracteres.
+Seccion B — Datos del Equipo
+Campo Regla
+Tipo de dispositivo Seleccion obligatoria. Si es "Otro", el campo de texto no puede estar
+vacio.
+Marca Seleccion obligatoria. Si es "Otra", el campo de texto no puede estar
+vacio.
+Modelo No puede estar vacio. Minimo 2 caracteres.
+Sistema operativo Seleccion obligatoria.
+"Descripcion detallada No puede estar vacia. Minimo 20 caracteres, maximo 500. Reparacion previa: solo se valida si el checkbox esta marcado. No puede superar los 300 caracteres."
+------------------------------------------------------------
+RESPUESTA RECIBIDA: 
+Copilot actualizó `validaciones.js` para verificar que la descripción del problema tenga entre 20 y 500 caracteres y que la descripción de reparaciones previas se valide solo si el checkbox está marcado, con un máximo de 300 caracteres.
+----------------------------------------------------------
+
+ USO EN EL PROYECTO: Usé la respuesta directamente para extender la función de validación en `validaciones.js`, ya que coincidía exactamente con las reglas de negocio solicitadas y no requirió ajustes adicionales.
+------------------------------------------------------
+ 
+ REFLEXION PERSONAL: se debe verificar de forma manual los nuevos scripts creados, ademas de en proximos prompts agregar los que faltan para los requisitos de la prueba

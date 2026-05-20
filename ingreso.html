@@ -25,6 +25,7 @@
         </section>
 
         <form id="ingreso-form" class="ingreso-form" novalidate>
+            <div id="form-errors" class="form-errors hidden" aria-live="assertive"></div>
             <fieldset>
                 <legend>Sección A — Datos del Cliente</legend>
                 <div class="form-grid">
@@ -254,94 +255,6 @@
         </form>
     </main>
 
-    <script>
-        const tipoClienteRadios = document.querySelectorAll('input[name="tipo-cliente"]');
-        const empresaFields = document.getElementById('empresa-fields');
-        const tipoDispositivo = document.getElementById('tipo-dispositivo');
-        const otroDispositivoField = document.getElementById('otro-dispositivo-field');
-        const marcaSelect = document.getElementById('marca');
-        const otraMarcaField = document.getElementById('otra-marca-field');
-        const garantiaCheckbox = document.getElementById('garantia');
-        const garantiaField = document.getElementById('garantia-field');
-        const datosImportantesCheckbox = document.getElementById('datos-importantes');
-        const advertenciaDatos = document.getElementById('advertencia-datos');
-        const intentoRepararCheckbox = document.getElementById('intento-reparar');
-        const detalleIntento = document.getElementById('detalle-intento');
-        const entregaRadios = document.querySelectorAll('input[name="entrega"]');
-        const direccionRetiro = document.getElementById('direccion-retiro');
-        const form = document.getElementById('ingreso-form');
-        const contactoError = document.getElementById('contacto-error');
-        const descripcionProblema = document.getElementById('descripcion-problema');
-        const contadorProblema = document.getElementById('contador-problema');
-        const detalleReparacion = document.getElementById('detalle-reparacion');
-        const contadorIntento = document.getElementById('contador-intento');
-
-        tipoClienteRadios.forEach(radio => {
-            radio.addEventListener('change', () => {
-                empresaFields.classList.toggle('hidden', radio.value !== 'empresa');
-            });
-        });
-
-        tipoDispositivo.addEventListener('change', () => {
-            otroDispositivoField.classList.toggle('hidden', tipoDispositivo.value !== 'Otro');
-        });
-
-        marcaSelect.addEventListener('change', () => {
-            otraMarcaField.classList.toggle('hidden', marcaSelect.value !== 'Otro');
-        });
-
-        garantiaCheckbox.addEventListener('change', () => {
-            garantiaField.classList.toggle('hidden', !garantiaCheckbox.checked);
-        });
-
-        datosImportantesCheckbox.addEventListener('change', () => {
-            advertenciaDatos.classList.toggle('hidden', !datosImportantesCheckbox.checked);
-        });
-
-        intentoRepararCheckbox.addEventListener('change', () => {
-            detalleIntento.classList.toggle('hidden', !intentoRepararCheckbox.checked);
-        });
-
-        entregaRadios.forEach(radio => {
-            radio.addEventListener('change', () => {
-                direccionRetiro.classList.toggle('hidden', radio.value !== 'retiro');
-            });
-        });
-
-        descripcionProblema.addEventListener('input', () => {
-            contadorProblema.textContent = descripcionProblema.value.length;
-        });
-
-        detalleReparacion.addEventListener('input', () => {
-            contadorIntento.textContent = detalleReparacion.value.length;
-        });
-
-        form.addEventListener('submit', (event) => {
-            const contactoSeleccionado = Array.from(document.querySelectorAll('input[name="contacto"]')).some(input => input.checked);
-            if (!contactoSeleccionado) {
-                event.preventDefault();
-                contactoError.classList.add('visible');
-                document.querySelector('input[name="contacto"]').focus();
-            } else {
-                contactoError.classList.remove('visible');
-                alert('Ingreso registrado correctamente. Nos contactaremos pronto.');
-            }
-        });
-
-        form.addEventListener('reset', () => {
-            setTimeout(() => {
-                empresaFields.classList.add('hidden');
-                otroDispositivoField.classList.add('hidden');
-                otraMarcaField.classList.add('hidden');
-                garantiaField.classList.add('hidden');
-                advertenciaDatos.classList.add('hidden');
-                detalleIntento.classList.add('hidden');
-                direccionRetiro.classList.add('hidden');
-                contadorProblema.textContent = '0';
-                contadorIntento.textContent = '0';
-                contactoError.classList.remove('visible');
-            }, 0);
-        });
-    </script>
+    <script src="validaciones.js"></script>
 </body>
 </html>
