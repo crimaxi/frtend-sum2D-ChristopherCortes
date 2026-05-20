@@ -285,7 +285,7 @@ RESPUESTA RECIBIDA: Copilot actualizó el formulario y la lógica de validación
 USO EN EL PROYECTO: Usé la respuesta directamente para modificar `ingreso.html`, `ingreso.css` y `validaciones.js`, porque coincidía con los requisitos del enunciado y permitió avanzar sin descartes.
 ------------------------------------------------------
 REFLEXION PERSONAL: El prompt fue útil y permitió obtener una implementación completa de los requisitos, los siguientes prompts seran para corregir algunos errores que quedaron en las fases 1 y 2
-============================================================
+===========================================================
 
 ============================================================ CONSULTA #5
 Etapa del proyecto: Etapa 1
@@ -298,4 +298,17 @@ RESPUESTA RECIBIDA: Copilot actualizó los estilos del contenedor de logos para 
 ----------------------------------------------------------
 USO EN EL PROYECTO: Modificaciones en apartados de la etapa 1 que tenian errores
 REFLEXION PERSONAL: esta fue una correccion necesaria que deje para el final con el fin de ahorrar tiempo y aprovecharlo en la construcion de la pagina web
+============================================================
+============================================================ CONSULTA #6
+Etapa del proyecto: Etapa 2 y 3
+Fecha: 20/05/2026
+
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: hace correcciones en el formulario para que se ajusten a los requisitos y los scrips
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Copilot indicó que debía corregir la estructura y estilos del formulario para que coincida con los requisitos de la fase 2, y se actualizaron los scripts y estilos correspondientes para que las validaciones y campos condicionales funcionaran correctamente.
+----------------------------------------------------------
+USO EN EL PROYECTO: Usé la respuesta directamente para ajustar `ingreso.html`, `ingreso.css` y `validaciones.js`, ya que el cambio respondía al pedido de corrección y mejoró la coherencia entre el formulario y los scripts.
+------------------------------------------------------
+REFLEXION PERSONAL: el ultimo prompt fue necesario para corregir datos que puedan fallar en la creacion de la etapa 3
 ============================================================

@@ -245,6 +245,38 @@ small {
     margin-bottom: 1rem;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.campo-error {
+    border-color: #dc2626 !important;
+    box-shadow: 0 0 0 3px rgba(220, 37, 58, 0.12);
+}
+
+.campo-ok {
+    border-color: #16a34a !important;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+.field-error-message {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    margin-top: 0.35rem;
+}
+
+.contador-naranja {
+    color: #d97706;
+}
+
+.contador-rojo {
+    color: #b91c1c;
+}
+
+.confirmation-section.hidden {
+    display: none !important;
+}
+
 .form-errors.hidden {
     display: none;
 }
