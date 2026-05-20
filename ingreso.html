@@ -44,7 +44,7 @@
                     <label for="telefono">Teléfono de contacto<span>*</span>
                         <input type="tel" id="telefono" name="telefono" required>
                     </label>
-                    <div class="radio-group">
+                    <div class="radio-group" id="tipo-cliente-group">
                         <p>Tipo de cliente<span>*</span></p>
                         <label><input type="radio" name="tipo-cliente" value="particular" checked> Particular</label>
                         <label><input type="radio" name="tipo-cliente" value="empresa"> Empresa</label>
@@ -185,7 +185,7 @@
                             <option>Hace meses</option>
                         </select>
                     </label>
-                    <div class="radio-group">
+                    <div class="radio-group" id="frecuencia-group">
                         <p>El problema es<span>*</span></p>
                         <label><input type="radio" name="frecuencia" value="permanente" required> Permanente</label>
                         <label><input type="radio" name="frecuencia" value="intermitente"> Intermitente</label>
@@ -207,7 +207,7 @@
             <fieldset>
                 <legend>Sección D — Preferencias de Entrega y Confirmación</legend>
                 <div class="form-grid">
-                    <div class="radio-group">
+                    <div class="radio-group" id="entrega-group">
                         <p>Modalidad de entrega<span>*</span></p>
                         <label><input type="radio" name="entrega" value="local" required> Lo llevo personalmente al local</label>
                         <label><input type="radio" name="entrega" value="retiro"> Solicito retiro a domicilio</label>
@@ -227,7 +227,7 @@
                             <option>Necesito consultar antes de aprobar cualquier gasto</option>
                         </select>
                     </label>
-                    <div class="checkbox-group obligatorio">
+                    <div class="checkbox-group obligatorio" id="contacto-group">
                         <p>Preferencia de contacto para notificaciones<span>*</span></p>
                         <label><input type="checkbox" name="contacto" value="whatsapp"> WhatsApp</label>
                         <label><input type="checkbox" name="contacto" value="correo"> Correo electrónico</label>
@@ -253,6 +253,22 @@
                 <button type="reset" class="btn-reset">Limpiar</button>
             </div>
         </form>
+
+        <section id="confirmation-section" class="confirmation-section hidden">
+            <h2>Confirmación de ingreso</h2>
+            <p id="confirm-message">¡Tu solicitud de ingreso se recibió correctamente!</p>
+            <ul class="confirm-details">
+                <li><strong>Cliente:</strong> <span id="confirm-nombre"></span></li>
+                <li><strong>Tipo de dispositivo:</strong> <span id="confirm-dispositivo"></span></li>
+                <li><strong>Marca y modelo:</strong> <span id="confirm-marca-modelo"></span></li>
+                <li><strong>Modalidad de entrega:</strong> <span id="confirm-entrega"></span></li>
+                <li><strong>Número de orden de ingreso:</strong> <span id="confirm-orden"></span></li>
+            </ul>
+            <div class="confirmation-actions">
+                <a href="index.html" class="btn-reset">Volver al inicio</a>
+                <button id="btn-ingresar-otro" type="button" class="btn-submit">Ingresar otro equipo</button>
+            </div>
+        </section>
     </main>
 
     <script src="validaciones.js"></script>

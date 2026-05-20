@@ -220,3 +220,69 @@ Copilot actualizó `validaciones.js` para verificar que la descripción del prob
 ------------------------------------------------------
  
  REFLEXION PERSONAL: se debe verificar de forma manual los nuevos scripts creados, ademas de en proximos prompts agregar los que faltan para los requisitos de la prueba
+
+============================================================
+
+============================================================ CONSULTA #4
+Etapa del proyecto: Etapa 3
+Fecha: 20/05/2026
+
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Fase 3:
+Seccion D — Entrega y Confirmacion
+Campo Regla
+Modalidad de entrega Debe seleccionarse una opcion. Si es "Retiro a domicilio", la direccion
+no puede estar vacia (minimo 10 caracteres).
+Presupuesto autorizado Seleccion obligatoria.
+Preferencia de contacto Al menos una opcion debe estar marcada.
+Horario de contacto Seleccion obligatoria.
+Checkbox de diagnostico y
+Terminos
+Ambos checkboxes son obligatorios. Mostrar mensaje especifico para
+cada uno que falte.
+3.4 Comportamiento de la Interfaz
+Campos Condicionales
+
+Tipo de cliente "Empresa": mostrar campos de nombre de empresa y CUIT. Ocultarlos y
+vaciarlos si se vuelve a elegir "Particular".
+Tipo de dispositivo "Otro" y Marca "Otra": mostrar el campo de texto adicional
+correspondiente. Ocultarlo si se elige otra opcion.
+Garantia vigente: mostrar el campo de numero de orden. Ocultarlo y vaciarlo si se
+desmarca.
+Reparacion previa: mostrar el textarea de descripcion. Ocultarlo y vaciarlo si se desmarca.
+Retiro a domicilio: mostrar el campo de direccion. Ocultarlo y vaciarlo si se elige "Lo llevo
+personalmente".
+Todos los campos condicionales deben validarse unicamente cuando esten visibles.
+Retroalimentacion Visual por Campo
+Error: agregar la clase "campo-error" (borde rojo); mostrar mensaje descriptivo debajo del
+campo generado por JavaScript.
+Correccion: remover "campo-error", agregar "campo-ok" (borde verde); ocultar el mensaje
+de error.
+Funcionalidades en Tiempo Real
+Contador de caracteres en los tres textareas (descripcion del problema, reparacion previa):
+actualizar en tiempo real. Naranja al superar el 80% del limite; rojo al alcanzar el maximo.
+Al cambiar el tipo de cliente, mostrar u ocultar los campos de empresa de forma inmediata y
+limpiar los valores si se ocultan.
+Comportamiento al Enviar
+Evaluacion Sumativa 2 | Desarrollo Web HTML & JS Servicio Tecnico TechFix
+Programacion Web | Pagina 10
+Usar preventDefault() para impedir el envio si hay errores.
+Validar todos los campos visibles en orden.
+Hacer scroll automatico al primer campo con error usando scrollIntoView().
+Mostrar un resumen al inicio con la cantidad total de errores encontrados.
+Pantalla de Confirmacion
+Si el formulario pasa todas las validaciones:
+Ocultar el formulario.
+Mostrar una seccion de confirmacion con: nombre del cliente, tipo de dispositivo, marca y
+modelo ingresados, modalidad de entrega elegida, numero de orden de ingreso generado
+aleatoriamente con Math.random() y un mensaje indicando que en hasta 48 horas habiles el
+equipo sera diagnosticado.
+Incluir un boton "Volver al inicio" y un boton "Ingresar otro equipo" que recargue el
+formulario.
+------------------------------------------------------------
+RESPUESTA RECIBIDA: Copilot actualizó el formulario y la lógica de validación para implementar las reglas de fase 3, incluyendo los campos condicionales, validación de Sección D, retroalimentación visual por campo y pantalla de confirmación.
+----------------------------------------------------------
+USO EN EL PROYECTO: Usé la respuesta directamente para modificar `ingreso.html`, `ingreso.css` y `validaciones.js`, porque coincidía con los requisitos del enunciado y permitió avanzar sin descartes.
+------------------------------------------------------
+REFLEXION PERSONAL: El prompt fue útil y permitió obtener una implementación completa de los requisitos, los siguientes prompts seran para corregir algunos errores que quedaron en las fases 1 y 2
+============================================================

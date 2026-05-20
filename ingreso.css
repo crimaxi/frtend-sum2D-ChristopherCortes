@@ -258,6 +258,77 @@ small {
     margin-bottom: 0.5rem;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.campo-error {
+    border-color: #dc2626 !important;
+    box-shadow: 0 0 0 3px rgba(220, 37, 58, 0.12);
+}
+
+.campo-ok {
+    border-color: #16a34a !important;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+.field-error-message {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    margin-top: 0.35rem;
+}
+
+#contador-problema,
+#contador-intento {
+    font-weight: 700;
+}
+
+.contador-naranja {
+    color: #f59e0b;
+}
+
+.contador-rojo {
+    color: #dc2626;
+}
+
+.confirmation-section {
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    background-color: var(--color-white);
+    margin-top: 1.5rem;
+}
+
+.confirmation-section h2 {
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+.confirm-details {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.confirm-details li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.confirmation-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.confirmation-actions .btn-submit,
+.confirmation-actions .btn-reset {
+    min-width: 190px;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .form-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
