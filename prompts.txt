@@ -83,4 +83,86 @@ el unico cambio significativo que realice fue el cambio en la paleta de colores,
 ------
 ============================================================
 
+============================================================ CONSULTA #2
+Etapa del proyecto: Etapa 2
+Fecha: 20/05/2026
+
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT:
+"Etapa 2 — Formulario de Ingreso de Equipo
+Archivos nuevos ingreso.html, ingreso.css (opcional)
+Commits minimos 2 commits con prefijo etapa2:
+2.1 Objetivo
+Crear la pagina ingreso.html con un formulario que permita al cliente registrar el ingreso de su
+equipo al servicio tecnico. El formulario debe recopilar datos del cliente, informacion del dispositivo,
+descripcion del problema y preferencias de contacto y entrega. Debe estar bien estructurado con
+semantica HTML5 y presentar un diseno responsivo.
+2.2 Estructura de Archivos (acumulativa)
+frtend-sum2D-nombre-apellido/ |-- index.html |-- ingreso.html |-- style.css
+|-- ingreso.css |-- prompts.txt |-- assets/ |-- images/
+2.3 Contenido del Formulario
+El formulario debe estar dividido en cuatro secciones claramente diferenciadas de forma visual.
+Seccion A — Datos del Cliente
+- Nombre completo (input text, requerido).
+Evaluacion Sumativa 2 | Desarrollo Web HTML & JS Servicio Tecnico TechFix
+Programacion Web | Pagina 6
+- DNI (input text, requerido).
+- Correo electronico (input email, requerido).
+- Confirmar correo electronico (input email, requerido).
+- Telefono de contacto (input tel, requerido).
+- Tipo de cliente (radio buttons: Particular, Empresa). Si se elige "Empresa", mostrar un
+campo adicional para el nombre de la empresa y el CUIT.
+- Provincia (select con al menos 10 provincias argentinas, requerido).
+- Localidad (input text, requerido).
+Seccion B — Datos del Equipo
+- Tipo de dispositivo (select: Notebook, Computador de escritorio, Impresora, Tablet,
+Telefono movil, Otro, requerido). Si se elige "Otro", mostrar un campo de texto para
+especificar.
+- Marca (select con las marcas de la Etapa 1 mas la opcion "Otra", requerido). Si se elige
+"Otra", mostrar campo de texto.
+- Modelo (input text, requerido).
+- Numero de serie o IMEI (input text, opcional, con nota aclaratoria de donde encontrarlo).
+- Sistema operativo (select: Windows 10, Windows 11, macOS, Linux, Android, iOS, No
+aplica / No sabe, requerido).
+- El equipo tiene garantia vigente del fabricante (checkbox). Si esta marcado, mostrar campo
+de texto para ingresar el numero de orden de compra o fecha de compra.
+- El equipo contiene datos importantes sin respaldo (checkbox, con advertencia visible de
+que TechFix no se responsabiliza por perdida de datos).
+Seccion C — Descripcion del Problema
+- Tipo de problema principal (select: No enciende, Pantalla danada, Lentitud o rendimiento,
+Virus o malware, Problema de red o conectividad, Danio por liquido, Sonido, Otro,
+requerido).
+- Desde cuando ocurre el problema (select: Hoy, Hace algunos dias, Hace semanas, Hace
+meses, requerido).
+- El problema es permanente o intermitente (radio buttons: Permanente, Intermitente,
+requerido).
+- Descripcion detallada del problema (textarea, minimo 20 caracteres, maximo 500
+caracteres, con contador, requerido).
+- El cliente ya intento repararlo o lo llevo a otro tecnico (checkbox). Si esta marcado, mostrar
+textarea para que describa que se hizo anteriormente (opcional, maximo 300 caracteres,
+con contador).
+Seccion D — Preferencias de Entrega y Confirmacion
+- Modalidad de entrega del equipo (radio buttons: Lo llevo personalmente al local, Solicito
+retiro a domicilio, requerido). Si se elige retiro a domicilio, mostrar campo de texto con la
+direccion completa.
+- Presupuesto maximo autorizado sin consulta previa (select: Hasta $5.000, Hasta $15.000,
+Hasta $30.000, Sin limite, Necesito consultar antes de aprobar cualquier gasto, requerido).
+- Preferencia de contacto para notificaciones (checkboxes: WhatsApp, Correo electronico,
+Llamada telefonica). Al menos una debe seleccionarse.
+Evaluacion Sumativa 2 | Desarrollo Web HTML & JS Servicio Tecnico TechFix
+Programacion Web | Pagina 7
+- Horario preferido para ser contactado (select: Manana 9 a 12, Tarde 12 a 17, Tarde-noche
+17 a 20, Indistinto, requerido).
+- El cliente acepta que el diagnostico puede demorar hasta 48 horas habiles (checkbox
+obligatorio).
+- Acepta los Terminos y Condiciones del servicio (checkbox obligatorio, con enlace a pagina
+ficticia).
+Botones de Accion
+- Boton principal "Registrar ingreso" (submit), centrado y con estilo destacado.
+- Boton secundario "Limpiar" (reset).
+- Enlace "Volver al inicio" que redirija a index.html."
+
+
+============================================================
+
 

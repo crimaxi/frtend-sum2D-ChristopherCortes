@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Equipo | TechFix</title>
+    <link rel="stylesheet" href="ingreso.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-container">
+            <a href="index.html" class="brand"><i class="fas fa-laptop-code"></i> TechFix</a>
+            <nav class="header-nav">
+                <a href="index.html">Volver al inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="form-intro">
+            <h1>Ingreso de Equipo</h1>
+            <p>Completa el formulario para registrar tu equipo en nuestro servicio técnico. Te contactaremos pronto con el diagnóstico.</p>
+        </section>
+
+        <form id="ingreso-form" class="ingreso-form" novalidate>
+            <fieldset>
+                <legend>Sección A — Datos del Cliente</legend>
+                <div class="form-grid">
+                    <label for="nombre">Nombre completo<span>*</span>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </label>
+                    <label for="dni">DNI<span>*</span>
+                        <input type="text" id="dni" name="dni" required>
+                    </label>
+                    <label for="email">Correo electrónico<span>*</span>
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                    <label for="confirm-email">Confirmar correo electrónico<span>*</span>
+                        <input type="email" id="confirm-email" name="confirm-email" required>
+                    </label>
+                    <label for="telefono">Teléfono de contacto<span>*</span>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </label>
+                    <div class="radio-group">
+                        <p>Tipo de cliente<span>*</span></p>
+                        <label><input type="radio" name="tipo-cliente" value="particular" checked> Particular</label>
+                        <label><input type="radio" name="tipo-cliente" value="empresa"> Empresa</label>
+                    </div>
+                    <div id="empresa-fields" class="conditional hidden">
+                        <label for="empresa-nombre">Nombre de la empresa
+                            <input type="text" id="empresa-nombre" name="empresa-nombre">
+                        </label>
+                        <label for="cuit">CUIT
+                            <input type="text" id="cuit" name="cuit">
+                        </label>
+                    </div>
+                    <label for="provincia">Provincia<span>*</span>
+                        <select id="provincia" name="provincia" required>
+                            <option value="">Selecciona una provincia</option>
+                            <option>Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </label>
+                    <label for="localidad">Localidad<span>*</span>
+                        <input type="text" id="localidad" name="localidad" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sección B — Datos del Equipo</legend>
+                <div class="form-grid">
+                    <label for="tipo-dispositivo">Tipo de dispositivo<span>*</span>
+                        <select id="tipo-dispositivo" name="tipo-dispositivo" required>
+                            <option value="">Selecciona un tipo</option>
+                            <option>Notebook</option>
+                            <option>Computador de escritorio</option>
+                            <option>Impresora</option>
+                            <option>Tablet</option>
+                            <option>Teléfono móvil</option>
+                            <option>Otro</option>
+                        </select>
+                    </label>
+                    <div id="otro-dispositivo-field" class="conditional hidden">
+                        <label for="otro-dispositivo">Especificar otro dispositivo
+                            <input type="text" id="otro-dispositivo" name="otro-dispositivo">
+                        </label>
+                    </div>
+                    <label for="marca">Marca<span>*</span>
+                        <select id="marca" name="marca" required>
+                            <option value="">Selecciona una marca</option>
+                            <option>HP</option>
+                            <option>Dell</option>
+                            <option>Lenovo</option>
+                            <option>Apple</option>
+                            <option>Samsung</option>
+                            <option>Asus</option>
+                            <option>Acer</option>
+                            <option>Otro</option>
+                        </select>
+                    </label>
+                    <div id="otra-marca-field" class="conditional hidden">
+                        <label for="otra-marca">Especificar otra marca
+                            <input type="text" id="otra-marca" name="otra-marca">
+                        </label>
+                    </div>
+                    <label for="modelo">Modelo<span>*</span>
+                        <input type="text" id="modelo" name="modelo" required>
+                    </label>
+                    <label for="serie">Número de serie o IMEI
+                        <input type="text" id="serie" name="serie">
+                        <small>Opcional. Suele encontrarse en la etiqueta trasera o en la configuración del equipo.</small>
+                    </label>
+                    <label for="sistema-operativo">Sistema operativo<span>*</span>
+                        <select id="sistema-operativo" name="sistema-operativo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Windows 10</option>
+                            <option>Windows 11</option>
+                            <option>macOS</option>
+                            <option>Linux</option>
+                            <option>Android</option>
+                            <option>iOS</option>
+                            <option>No aplica / No sabe</option>
+                        </select>
+                    </label>
+                    <label class="checkbox-label"><input type="checkbox" id="garantia" name="garantia"> El equipo tiene garantía vigente del fabricante</label>
+                    <div id="garantia-field" class="conditional hidden">
+                        <label for="orden-compra">Orden de compra o fecha de compra
+                            <input type="text" id="orden-compra" name="orden-compra">
+                        </label>
+                    </div>
+                    <label class="checkbox-label"><input type="checkbox" id="datos-importantes" name="datos-importantes"> El equipo contiene datos importantes sin respaldo</label>
+                    <div class="advertencia hidden" id="advertencia-datos">
+                        <i class="fas fa-exclamation-triangle"></i> TechFix no se responsabiliza por pérdida de datos. Realiza copias antes de entregar tu equipo.
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sección C — Descripción del Problema</legend>
+                <div class="form-grid">
+                    <label for="tipo-problema">Tipo de problema principal<span>*</span>
+                        <select id="tipo-problema" name="tipo-problema" required>
+                            <option value="">Selecciona un problema</option>
+                            <option>No enciende</option>
+                            <option>Pantalla dañada</option>
+                            <option>Lentitud o rendimiento</option>
+                            <option>Virus o malware</option>
+                            <option>Problema de red o conectividad</option>
+                            <option>Daño por líquido</option>
+                            <option>Sonido</option>
+                            <option>Otro</option>
+                        </select>
+                    </label>
+                    <label for="desde">Desde cuándo ocurre el problema<span>*</span>
+                        <select id="desde" name="desde" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Hoy</option>
+                            <option>Hace algunos días</option>
+                            <option>Hace semanas</option>
+                            <option>Hace meses</option>
+                        </select>
+                    </label>
+                    <div class="radio-group">
+                        <p>El problema es<span>*</span></p>
+                        <label><input type="radio" name="frecuencia" value="permanente" required> Permanente</label>
+                        <label><input type="radio" name="frecuencia" value="intermitente"> Intermitente</label>
+                    </div>
+                    <label for="descripcion-problema">Descripción detallada del problema<span>*</span>
+                        <textarea id="descripcion-problema" name="descripcion-problema" rows="5" minlength="20" maxlength="500" required></textarea>
+                        <small><span id="contador-problema">0</span>/500 caracteres</small>
+                    </label>
+                    <label class="checkbox-label"><input type="checkbox" id="intento-reparar" name="intento-reparar"> Ya intenté repararlo o lo llevé a otro técnico</label>
+                    <div id="detalle-intento" class="conditional hidden">
+                        <label for="detalle-reparacion">Describe qué se hizo anteriormente
+                            <textarea id="detalle-reparacion" name="detalle-reparacion" rows="4" maxlength="300"></textarea>
+                            <small><span id="contador-intento">0</span>/300 caracteres</small>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sección D — Preferencias de Entrega y Confirmación</legend>
+                <div class="form-grid">
+                    <div class="radio-group">
+                        <p>Modalidad de entrega<span>*</span></p>
+                        <label><input type="radio" name="entrega" value="local" required> Lo llevo personalmente al local</label>
+                        <label><input type="radio" name="entrega" value="retiro"> Solicito retiro a domicilio</label>
+                    </div>
+                    <div id="direccion-retiro" class="conditional hidden">
+                        <label for="direccion">Dirección completa para retiro
+                            <input type="text" id="direccion" name="direccion">
+                        </label>
+                    </div>
+                    <label for="presupuesto">Presupuesto máximo autorizado sin consulta previa<span>*</span>
+                        <select id="presupuesto" name="presupuesto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Hasta $5.000</option>
+                            <option>Hasta $15.000</option>
+                            <option>Hasta $30.000</option>
+                            <option>Sin límite</option>
+                            <option>Necesito consultar antes de aprobar cualquier gasto</option>
+                        </select>
+                    </label>
+                    <div class="checkbox-group obligatorio">
+                        <p>Preferencia de contacto para notificaciones<span>*</span></p>
+                        <label><input type="checkbox" name="contacto" value="whatsapp"> WhatsApp</label>
+                        <label><input type="checkbox" name="contacto" value="correo"> Correo electrónico</label>
+                        <label><input type="checkbox" name="contacto" value="telefono"> Llamada telefónica</label>
+                    </div>
+                    <label for="horario">Horario preferido para ser contactado<span>*</span>
+                        <select id="horario" name="horario" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Mañana 9 a 12</option>
+                            <option>Tarde 12 a 17</option>
+                            <option>Tarde-noche 17 a 20</option>
+                            <option>Indistinto</option>
+                        </select>
+                    </label>
+                    <label class="checkbox-label"><input type="checkbox" id="acepta-diagnostico" name="acepta-diagnostico" required> Acepto que el diagnóstico puede demorar hasta 48 horas hábiles</label>
+                    <label class="checkbox-label"><input type="checkbox" id="acepta-terminos" name="acepta-terminos" required> Acepto los <a href="#">Términos y Condiciones</a> del servicio</label>
+                    <div class="error-message" id="contacto-error">Selecciona al menos una forma de contacto.</div>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Registrar ingreso</button>
+                <button type="reset" class="btn-reset">Limpiar</button>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        const tipoClienteRadios = document.querySelectorAll('input[name="tipo-cliente"]');
+        const empresaFields = document.getElementById('empresa-fields');
+        const tipoDispositivo = document.getElementById('tipo-dispositivo');
+        const otroDispositivoField = document.getElementById('otro-dispositivo-field');
+        const marcaSelect = document.getElementById('marca');
+        const otraMarcaField = document.getElementById('otra-marca-field');
+        const garantiaCheckbox = document.getElementById('garantia');
+        const garantiaField = document.getElementById('garantia-field');
+        const datosImportantesCheckbox = document.getElementById('datos-importantes');
+        const advertenciaDatos = document.getElementById('advertencia-datos');
+        const intentoRepararCheckbox = document.getElementById('intento-reparar');
+        const detalleIntento = document.getElementById('detalle-intento');
+        const entregaRadios = document.querySelectorAll('input[name="entrega"]');
+        const direccionRetiro = document.getElementById('direccion-retiro');
+        const form = document.getElementById('ingreso-form');
+        const contactoError = document.getElementById('contacto-error');
+        const descripcionProblema = document.getElementById('descripcion-problema');
+        const contadorProblema = document.getElementById('contador-problema');
+        const detalleReparacion = document.getElementById('detalle-reparacion');
+        const contadorIntento = document.getElementById('contador-intento');
+
+        tipoClienteRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                empresaFields.classList.toggle('hidden', radio.value !== 'empresa');
+            });
+        });
+
+        tipoDispositivo.addEventListener('change', () => {
+            otroDispositivoField.classList.toggle('hidden', tipoDispositivo.value !== 'Otro');
+        });
+
+        marcaSelect.addEventListener('change', () => {
+            otraMarcaField.classList.toggle('hidden', marcaSelect.value !== 'Otro');
+        });
+
+        garantiaCheckbox.addEventListener('change', () => {
+            garantiaField.classList.toggle('hidden', !garantiaCheckbox.checked);
+        });
+
+        datosImportantesCheckbox.addEventListener('change', () => {
+            advertenciaDatos.classList.toggle('hidden', !datosImportantesCheckbox.checked);
+        });
+
+        intentoRepararCheckbox.addEventListener('change', () => {
+            detalleIntento.classList.toggle('hidden', !intentoRepararCheckbox.checked);
+        });
+
+        entregaRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                direccionRetiro.classList.toggle('hidden', radio.value !== 'retiro');
+            });
+        });
+
+        descripcionProblema.addEventListener('input', () => {
+            contadorProblema.textContent = descripcionProblema.value.length;
+        });
+
+        detalleReparacion.addEventListener('input', () => {
+            contadorIntento.textContent = detalleReparacion.value.length;
+        });
+
+        form.addEventListener('submit', (event) => {
+            const contactoSeleccionado = Array.from(document.querySelectorAll('input[name="contacto"]')).some(input => input.checked);
+            if (!contactoSeleccionado) {
+                event.preventDefault();
+                contactoError.classList.add('visible');
+                document.querySelector('input[name="contacto"]').focus();
+            } else {
+                contactoError.classList.remove('visible');
+                alert('Ingreso registrado correctamente. Nos contactaremos pronto.');
+            }
+        });
+
+        form.addEventListener('reset', () => {
+            setTimeout(() => {
+                empresaFields.classList.add('hidden');
+                otroDispositivoField.classList.add('hidden');
+                otraMarcaField.classList.add('hidden');
+                garantiaField.classList.add('hidden');
+                advertenciaDatos.classList.add('hidden');
+                detalleIntento.classList.add('hidden');
+                direccionRetiro.classList.add('hidden');
+                contadorProblema.textContent = '0';
+                contadorIntento.textContent = '0';
+                contactoError.classList.remove('visible');
+            }, 0);
+        });
+    </script>
+</body>
+</html>
